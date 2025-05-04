@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Welcome to sum </title>
+</head>
+
+<body>
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-gray-900">Calculator App</h1>
+        </div>
+      </header>
+    <form method="POST">
+        {% csrf_token %}
+        <label> Number 1 </label>
+        <input type="number1" name="number1">
+
+
+        <label> Number 2</label>
+        <input type="number2" name="number2">
+
+        <button type="submit" value="calculation"> Submit </button>
+        <h2>
+            {{result}}
+        </h2>
+
+
+    </form>
+
+
+</body>
+</html>

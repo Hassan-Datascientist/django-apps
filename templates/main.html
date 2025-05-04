@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My App Showcase</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold text-gray-900">My App Showcase</h1>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      
+      <!-- Calculator App Card -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+        <h2 class="text-2xl font-semibold text-blue-600">Simple Calculator</h2>
+        <p class="mt-2 text-gray-600">Perform basic arithmetic operations in a clean interface.</p>
+        <a href="{% url 'calculator-page' %}" class="inline-block mt-4 text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">
+          Open Calculator
+        </a>
+      </div>
+
+      <!-- To-Do App Card -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+        <h2 class="text-2xl font-semibold text-green-600">To-Do App</h2>
+        <p class="mt-2 text-gray-600">Organize your tasks efficiently and stay productive.</p>
+        <a href="{% url 'get-tasks' %}" class="inline-block mt-4 text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition">
+          Open To-Do App
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center text-gray-500 text-sm py-6">
+    &copy; 2025 My App Collection. All rights reserved.
+  </footer>
+</body>
+</html>
